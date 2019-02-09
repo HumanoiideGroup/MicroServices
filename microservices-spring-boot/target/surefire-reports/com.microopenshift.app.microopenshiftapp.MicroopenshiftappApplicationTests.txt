@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.microopenshift.app.microopenshiftapp.MicroopenshiftappApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.913 s - in com.microopenshift.app.microopenshiftapp.MicroopenshiftappApplicationTests
