@@ -65,7 +65,7 @@ permet de voir les logs de notre container
 
 -Connectez vous à votre espace sur le hub en ligne de commande sur votre machine :
 
- ##### sudo docker login
+ sudo docker login
 
 -Transferer l'image vers le hub docker
 
