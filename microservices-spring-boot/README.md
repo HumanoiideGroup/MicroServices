@@ -22,6 +22,7 @@ que fait maven,lorsque nous avons des dépendances qui n'existent pas notre repo
  votre machine
 
 -Les instructions à l'interieur du fichier sont les suivantes
+
  //Notre image de base contient OpenJDK
  ##### FROM openjdk
 
