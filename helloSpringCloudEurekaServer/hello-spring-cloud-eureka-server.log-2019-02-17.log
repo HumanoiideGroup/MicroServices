@@ -1,0 +1,296 @@
+2019-02-17 15:24:01.691  INFO [-,,,] 68108 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : No active profile set, falling back to default profiles: default
+2019-02-17 15:24:01.747  INFO [-,,,] 68108 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e560f30: startup date [Sun Feb 17 15:24:01 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1c9fdb1b
+2019-02-17 15:24:01.826  WARN [-,,,] 68108 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.spring.cloud.api.ereuka.server.app.HelloSpringCloudEurekaServerApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.feign.FeignClientsConfiguration
+2019-02-17 15:24:01.876 ERROR [-,,,] 68108 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.spring.cloud.api.ereuka.server.app.HelloSpringCloudEurekaServerApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.feign.FeignClientsConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:646)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:303)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:233)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:271)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:91)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.spring.cloud.api.ereuka.server.app.HelloSpringCloudEurekaServerApplication.main(HelloSpringCloudEurekaServerApplication.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.feign.FeignClientsConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:169)
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:393)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:318)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:636)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: feign/codec/Encoder
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:158)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: feign.codec.Encoder
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 42 common frames omitted
+
+2019-02-17 15:36:51.617  INFO [-,,,] 59692 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : No active profile set, falling back to default profiles: default
+2019-02-17 15:36:51.661  INFO [-,,,] 59692 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6167e6: startup date [Sun Feb 17 15:36:51 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2293e0c9
+2019-02-17 15:36:54.391  INFO [-,,,] 59692 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-02-17 15:36:54.835  INFO [-,,,] 59692 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=324920b3-9543-3664-94ca-a4a8d661fd9b
+2019-02-17 15:36:54.916  INFO [-,,,] 59692 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 15:36:55.565  INFO [-,,,] 59692 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba05bda6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-17 15:36:55.722  INFO [-,,,] 59692 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$39860ad8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-17 15:36:55.760  INFO [-,,,] 59692 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d61fc0a3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-17 15:36:57.267  INFO [-,,,] 59692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2019-02-17 15:36:57.302  INFO [-,,,] 59692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-17 15:36:57.302  INFO [-,,,] 59692 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-02-17 15:36:57.308  INFO [-,,,] 59692 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\logiciels_windows\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;F:\logiciels_windows\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Marc Montan\AppData\Local\Microsoft\WindowsApps;;F:\logiciels_windows\spring-tool-suite-4-4.1.0.RELEASE-e4.10.0-win32.win32.x86_64\sts-4.1.0.RELEASE;;.]
+2019-02-17 15:36:57.669  INFO [-,,,] 59692 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-17 15:36:57.671  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6009 ms
+2019-02-17 15:36:58.099  WARN [-,,,] 59692 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-17 15:36:58.099  INFO [-,,,] 59692 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-17 15:36:58.114  INFO [-,,,] 59692 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3bbc11ea
+2019-02-17 15:37:00.022  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.aop.framework.CglibAopProxy          : Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2019-02-17 15:37:02.658  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-17 15:37:02.659  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-02-17 15:37:02.660  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2019-02-17 15:37:02.661  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2019-02-17 15:37:02.661  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-17 15:37:02.661  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-17 15:37:02.661  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-17 15:37:02.661  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-02-17 15:37:02.662  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2019-02-17 15:37:02.662  INFO [-,,,] 59692 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-17 15:37:02.782  INFO [-,,,] 59692 --- [localhost-startStop-1] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-02-17 15:37:02.948  INFO [-,,,] 59692 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-02-17 15:37:02.950  INFO [-,,,] 59692 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-02-17 15:37:03.247  INFO [-,,,] 59692 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-02-17 15:37:03.248  INFO [-,,,] 59692 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-02-17 15:37:04.147  INFO [-,,,] 59692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-17 15:37:04.578  INFO [-,,,] 59692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-17 15:37:04.740  INFO [-,,,] 59692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-02-17 15:37:04.815  INFO [-,,,] 59692 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-17 15:37:05.182  INFO [-,,,] 59692 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-02-17 15:37:05.188  INFO [-,,,] 59692 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-17 15:37:05.385  INFO [-,,,] 59692 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-17 15:37:05.707  INFO [-,,,] 59692 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-17 15:37:06.374  INFO [-,,,] 59692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-17 15:37:06.508  WARN [-,,,] 59692 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-17 15:37:06.509  INFO [-,,,] 59692 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-17 15:37:06.759  INFO [-,,,] 59692 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-17 15:37:07.619  INFO [-,,,] 59692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6167e6: startup date [Sun Feb 17 15:36:51 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2293e0c9
+2019-02-17 15:37:07.680  WARN [-,,,] 59692 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-17 15:37:07.808  INFO [-,,,] 59692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-17 15:37:07.811  INFO [-,,,] 59692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-17 15:37:07.822  INFO [-,,,] 59692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-17 15:37:07.823  INFO [-,,,] 59692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-17 15:37:07.902  INFO [-,,,] 59692 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-17 15:37:07.902  INFO [-,,,] 59692 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-17 15:37:09.719  INFO [-,,,] 59692 --- [restartedMain] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6167e6: startup date [Sun Feb 17 15:36:51 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2293e0c9] and template loader path [classpath:/templates/]
+2019-02-17 15:37:09.720  INFO [-,,,] 59692 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-17 15:37:10.216  INFO [-,,,] 59692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-17 15:37:11.417  INFO [-,,,] 59692 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-02-17 15:37:11.536  INFO [-,,,] 59692 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-02-17 15:37:11.537  INFO [-,,,] 59692 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2019-02-17 15:37:11.571  INFO [-,,,] 59692 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1550414231548 with initial instances count: 0
+2019-02-17 15:37:11.801  INFO [-,,,] 59692 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2019-02-17 15:37:11.804  INFO [-,,,] 59692 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-02-17 15:37:12.117  INFO [-,,,] 59692 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-02-17 15:37:12.117  INFO [-,,,] 59692 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-02-17 15:37:12.117  INFO [-,,,] 59692 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-02-17 15:37:12.118  INFO [-,,,] 59692 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-02-17 15:37:12.328  INFO [-,,,] 59692 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2019-02-17 15:37:12.347  INFO [-,,,] 59692 --- [restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2019-02-17 15:37:12.348  INFO [-,,,] 59692 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2019-02-17 15:37:12.446  INFO [-,,,] 59692 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-17 15:37:12.446  INFO [-,,,] 59692 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-17 15:37:12.527  INFO [-,,,] 59692 --- [RMI TCP Connection(3)-127.0.0.1] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-17 15:37:12.549  INFO [-,,,] 59692 --- [RMI TCP Connection(3)-127.0.0.1] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-17 15:37:12.550  INFO [-,,,] 59692 --- [RMI TCP Connection(3)-127.0.0.1] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-17 15:37:12.552  INFO [-,,,] 59692 --- [RMI TCP Connection(3)-127.0.0.1] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-17 15:37:12.686  INFO [-,,,] 59692 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 240 ms
+2019-02-17 15:37:12.875  INFO [-,,,] 59692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-17 15:37:12.881  INFO [-,,,] 59692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-17 15:37:12.927  INFO [-,,,] 59692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-02-17 15:37:12.931  INFO [-,,,] 59692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-02-17 15:37:12.937  INFO [-,,,] 59692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-02-17 15:37:12.978  INFO [-,,,] 59692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-02-17 15:37:13.006  INFO [-,,,] 59692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-02-17 15:37:13.044  INFO [-,,,] 59692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7e6167e6,type=ConfigurationPropertiesRebinder]
+2019-02-17 15:37:13.069  INFO [-,,,] 59692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-02-17 15:37:13.106  INFO [-,,,] 59692 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-02-17 15:37:13.124  INFO [-,,,] 59692 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application hello-eureka-server with eureka with status UP
+2019-02-17 15:37:13.138  INFO [-,,,] 59692 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2019-02-17 15:37:13.144  INFO [-,,,] 59692 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-02-17 15:37:13.145  INFO [-,,,] 59692 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2019-02-17 15:37:13.171  INFO [-,,,] 59692 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2019-02-17 15:37:13.173  INFO [-,,,] 59692 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2019-02-17 15:37:13.174  INFO [-,,,] 59692 --- [Thread-21] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2019-02-17 15:37:13.174  INFO [-,,,] 59692 --- [Thread-21] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2019-02-17 15:37:13.174  INFO [-,,,] 59692 --- [Thread-21] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2019-02-17 15:37:13.196  INFO [-,,,] 59692 --- [Thread-21] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-02-17 15:37:13.405  INFO [-,,,] 59692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2019-02-17 15:37:13.407  INFO [-,,,] 59692 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2019-02-17 15:37:13.415  INFO [-,,,] 59692 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : Started HelloSpringCloudEurekaServerApplication in 26.214 seconds (JVM running for 33.406)
+2019-02-17 15:38:13.176  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:39:13.177  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:40:13.177  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:41:13.177  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:42:13.178  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:43:13.178  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:44:13.180  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-02-17 15:45:13.181  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:46:13.182  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:47:11.744  INFO [-,cd5763acf0c14f8c,cd5763acf0c14f8c,false] 59692 --- [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=false)
+2019-02-17 15:47:12.656  INFO [-,d37f52e75b45589b,d37f52e75b45589b,false] 59692 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-17 15:47:13.183  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:47:25.825  INFO [-,,,] 59692 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@56a05f7e}] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-localhost: startup date [Sun Feb 17 15:47:25 CET 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6167e6
+2019-02-17 15:47:25.944  INFO [-,,,] 59692 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@56a05f7e}] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 15:47:26.618  INFO [-,,,] 59692 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@56a05f7e}] c.netflix.config.ChainedDynamicProperty  : Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-02-17 15:47:26.658  INFO [-,,,] 59692 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@56a05f7e}] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2019-02-17 15:47:26.669  INFO [-,,,] 59692 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@56a05f7e}] c.netflix.loadbalancer.BaseLoadBalancer  : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-02-17 15:47:26.706  INFO [-,,,] 59692 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@56a05f7e}] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-02-17 15:47:26.718  INFO [-,,,] 59692 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@56a05f7e}] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@74405a38
+2019-02-17 15:47:57.268  INFO [-,521e057c1cabe272,521e057c1cabe272,false] 59692 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=false)
+2019-02-17 15:47:57.753  INFO [-,aac42160be94ccfa,aac42160be94ccfa,false] 59692 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=true)
+2019-02-17 15:48:13.183  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:49:13.183  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:50:13.184  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:51:13.184  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:52:12.347  INFO [-,,,] 59692 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 0
+2019-02-17 15:52:13.184  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:53:13.184  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:54:13.185  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:55:13.185  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:56:13.185  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:57:13.185  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 15:58:13.190  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-02-17 15:59:13.191  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-02-17 16:00:13.192  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:01:13.193  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:02:13.193  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:03:13.194  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:04:13.195  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-02-17 16:05:13.195  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:05:37.545  INFO [-,2b010595bfda4c10,2b010595bfda4c10,false] 59692 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-17 16:05:37.688  INFO [-,0348daa1b2f0dccf,0348daa1b2f0dccf,false] 59692 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-17 16:06:13.196  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-02-17 16:07:12.348  INFO [-,,,] 59692 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 0
+2019-02-17 16:07:13.197  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:07:57.081  INFO [-,2a526b01a977ff41,2a526b01a977ff41,false] 59692 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=false)
+2019-02-17 16:07:57.372  INFO [-,43efe5ddef30604c,43efe5ddef30604c,false] 59692 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-17 16:07:57.393  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010:Heartbeat@localhost failed with response code 409
+2019-02-17 16:07:57.393  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-eureka-histrix  :8010 My Timestamp : 1550415937136, Peer's timestamp: 1550416077063
+2019-02-17 16:07:57.394  INFO [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-0] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-17 16:08:13.001  INFO [-,d1e5f804a45d8fd7,d1e5f804a45d8fd7,false] 59692 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-17 16:08:13.197  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:08:13.366  INFO [-,f7194949439a01b0,f7194949439a01b0,false] 59692 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-17 16:08:13.390  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-8] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010:Heartbeat@localhost failed with response code 409
+2019-02-17 16:08:13.390  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-8] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-eureka-histrix  :8010 My Timestamp : 1550416077063, Peer's timestamp: 1550416092993
+2019-02-17 16:08:13.391  INFO [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-17 16:09:13.197  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:09:24.857  INFO [-,c8b1083812b37ae9,c8b1083812b37ae9,false] 59692 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=false)
+2019-02-17 16:09:25.342  INFO [-,e1b2c3c530c8a30a,e1b2c3c530c8a30a,false] 59692 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-17 16:09:25.369  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-2] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010:Heartbeat@localhost failed with response code 409
+2019-02-17 16:09:25.369  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-2] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-eureka-histrix  :8010 My Timestamp : 1550416092993, Peer's timestamp: 1550416164846
+2019-02-17 16:09:25.373  INFO [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-17 16:09:37.926  INFO [-,d4e478981d42e010,d4e478981d42e010,false] 59692 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-17 16:09:38.438  INFO [-,92abace5ae948202,92abace5ae948202,false] 59692 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-17 16:10:13.206  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2019-02-17 16:11:13.207  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:12:13.208  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:13:13.208  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:14:13.209  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:15:13.209  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:16:07.244  INFO [-,2b5ba1b2a068f77c,2b5ba1b2a068f77c,false] 59692 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=false)
+2019-02-17 16:16:08.183  INFO [-,4777572ee355cfa0,4777572ee355cfa0,true] 59692 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-17 16:16:13.229  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 20ms
+2019-02-17 16:16:19.667  INFO [-,664e47f238a31d2b,664e47f238a31d2b,false] 59692 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-17 16:16:19.884  INFO [-,8407d817ed70af70,8407d817ed70af70,true] 59692 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-17 16:16:19.895  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-12] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010:Heartbeat@localhost failed with response code 409
+2019-02-17 16:16:19.895  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-12] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-eureka-histrix  :8010 My Timestamp : 1550416567233, Peer's timestamp: 1550416579658
+2019-02-17 16:16:19.896  INFO [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-12] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-17 16:17:13.230  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:18:13.231  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:19:13.231  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:20:13.232  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:21:13.232  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:22:12.352  INFO [-,,,] 59692 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 0
+2019-02-17 16:22:13.232  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:23:13.275  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 42ms
+2019-02-17 16:24:13.274  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:25:13.275  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:26:13.275  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:26:27.392  INFO [-,9ae6255680963892,9ae6255680963892,false] 59692 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=false)
+2019-02-17 16:26:27.866  INFO [-,7c15ebe3ec033ce4,7c15ebe3ec033ce4,false] 59692 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-17 16:26:27.907  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-11] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010:Heartbeat@localhost failed with response code 409
+2019-02-17 16:26:27.912  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-11] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-eureka-histrix  :8010 My Timestamp : 1550416579658, Peer's timestamp: 1550417187363
+2019-02-17 16:26:27.913  INFO [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-11] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-17 16:26:40.750  INFO [-,bb59a546f6aa30de,bb59a546f6aa30de,false] 59692 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-17 16:26:41.063  INFO [-,481abbf4e530c371,481abbf4e530c371,false] 59692 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-17 16:26:41.068  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-9] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010:Heartbeat@localhost failed with response code 409
+2019-02-17 16:26:41.069  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-9] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-eureka-histrix  :8010 My Timestamp : 1550417187363, Peer's timestamp: 1550417200730
+2019-02-17 16:26:41.070  INFO [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-17 16:27:13.275  INFO [-,,,] 59692 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-17 16:27:44.487  INFO [-,b0e89319922c1093,b0e89319922c1093,false] 59692 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=false)
+2019-02-17 16:27:44.985  INFO [-,ecf18364d3641204,ecf18364d3641204,true] 59692 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-17 16:27:44.990  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-4] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010:Heartbeat@localhost failed with response code 409
+2019-02-17 16:27:44.991  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-4] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-eureka-histrix  :8010 My Timestamp : 1550417200730, Peer's timestamp: 1550417264472
+2019-02-17 16:27:44.991  INFO [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-17 16:27:46.276  INFO [-,28f71f88ada55655,28f71f88ada55655,false] 59692 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28 with status DOWN (replication=false)
+2019-02-17 16:27:47.158  INFO [-,0b7273c3fdcaa070,0b7273c3fdcaa070,false] 59692 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28 with status DOWN (replication=true)
+2019-02-17 16:27:53.718  INFO [-,e0d9f8ec2bfddd1c,e0d9f8ec2bfddd1c,false] 59692 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=false)
+2019-02-17 16:27:54.232  INFO [-,eaadd15dad293edb,eaadd15dad293edb,false] 59692 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=true)
+2019-02-17 16:27:54.750  INFO [-,a1d43342b4bc5ec8,a1d43342b4bc5ec8,false] 59692 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 (replication=false)
+2019-02-17 16:27:55.323  WARN [-,e262b9031008a1ce,e262b9031008a1ce,true] 59692 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090
+2019-02-17 16:27:55.324  INFO [-,e262b9031008a1ce,e262b9031008a1ce,true] 59692 --- [http-nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): HELLO-RIBBON-EUREKA-CLIENT - 10.188.178.28:hello-ribbon-eureka-client:9090
+2019-02-17 16:27:55.324  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-11] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090:Cancel@localhost failed with response code 404
+2019-02-17 16:27:55.325  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-11] c.netflix.eureka.cluster.PeerEurekaNode  : HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090:Cancel@localhost: missing entry.
+2019-02-17 16:28:01.044  INFO [-,45717d8979930443,45717d8979930443,false] 59692 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=false)
+2019-02-17 16:28:01.238  INFO [-,9827865a3b065823,9827865a3b065823,false] 59692 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=false)
+2019-02-17 16:28:01.300  INFO [-,84b1ba19a16446fa,84b1ba19a16446fa,false] 59692 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 (replication=false)
+2019-02-17 16:28:01.375  WARN [-,bf7ac279c29462e1,bf7ac279c29462e1,false] 59692 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: HELLO-RIBBON-EUREKA-CLIENT - 10.188.178.28:hello-ribbon-eureka-client:9091
+2019-02-17 16:28:01.375  WARN [-,bf7ac279c29462e1,bf7ac279c29462e1,false] 59692 --- [http-nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Renew): HELLO-RIBBON-EUREKA-CLIENT - 10.188.178.28:hello-ribbon-eureka-client:9091
+2019-02-17 16:28:01.376  INFO [-,bf7ac279c29462e1,bf7ac279c29462e1,false] 59692 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-17 16:28:01.376  INFO [-,bf7ac279c29462e1,bf7ac279c29462e1,false] 59692 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 (replication=true)
+2019-02-17 16:28:01.377  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-9] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091:Heartbeat@localhost failed with response code 404
+2019-02-17 16:28:01.377  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-9] c.netflix.eureka.cluster.PeerEurekaNode  : HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091:Heartbeat@localhost: missing entry.
+2019-02-17 16:28:01.377  WARN [-,,,] 59692 --- [TaskBatchingWorker-target_localhost-9] c.netflix.eureka.cluster.PeerEurekaNode  : HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091:Heartbeat@localhost: cannot find instance id 10.188.178.28:hello-ribbon-eureka-client:9091 and hence replicating the instance with status UP
+2019-02-17 16:28:01.911  INFO [-,a4ac6606bd303e11,a4ac6606bd303e11,false] 59692 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-17 16:28:04.810  INFO [-,,,] 59692 --- [RMI TCP Connection(74)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-02-17 16:28:04.819  INFO [-,,,] 59692 --- [RMI TCP Connection(74)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6167e6: startup date [Sun Feb 17 15:36:51 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2293e0c9
+2019-02-17 16:28:05.041  INFO [-,,,] 59692 --- [RMI TCP Connection(74)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application hello-eureka-server with eureka with status DOWN
+2019-02-17 16:28:05.222  INFO [-,,,] 59692 --- [RMI TCP Connection(74)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2019-02-17 16:28:05.301  INFO [-,,,] 59692 --- [RMI TCP Connection(74)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2019-02-17 16:28:05.461  INFO [-,,,] 59692 --- [RMI TCP Connection(74)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2019-02-17 16:28:05.721  INFO [-,,,] 59692 --- [RMI TCP Connection(74)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-02-17 16:28:05.749  INFO [-,,,] 59692 --- [RMI TCP Connection(74)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-02-17 16:28:06.018  INFO [-,,,] 59692 --- [RMI TCP Connection(74)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

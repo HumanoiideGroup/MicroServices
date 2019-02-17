@@ -1,0 +1,1111 @@
+2019-02-16 00:38:40.890  INFO [-,,,] 21688 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : No active profile set, falling back to default profiles: default
+2019-02-16 00:38:40.909  INFO [-,,,] 21688 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52c500ad: startup date [Sat Feb 16 00:38:40 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2fb31f9b
+2019-02-16 00:38:44.253  INFO [-,,,] 21688 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-02-16 00:38:45.103  INFO [-,,,] 21688 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=324920b3-9543-3664-94ca-a4a8d661fd9b
+2019-02-16 00:38:45.175  INFO [-,,,] 21688 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 00:38:45.706  INFO [-,,,] 21688 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15f05b2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 00:38:45.815  INFO [-,,,] 21688 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$9570a85e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 00:38:45.847  INFO [-,,,] 21688 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$320a5e29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 00:38:47.223  INFO [-,,,] 21688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2019-02-16 00:38:47.251  INFO [-,,,] 21688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-16 00:38:47.252  INFO [-,,,] 21688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-02-16 00:38:47.257  INFO [-,,,] 21688 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\logiciels_windows\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;F:\logiciels_windows\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Marc Montan\AppData\Local\Microsoft\WindowsApps;;F:\logiciels_windows\spring-tool-suite-4-4.1.0.RELEASE-e4.10.0-win32.win32.x86_64\sts-4.1.0.RELEASE;;.]
+2019-02-16 00:38:47.664  INFO [-,,,] 21688 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-16 00:38:47.667  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6758 ms
+2019-02-16 00:38:48.446  WARN [-,,,] 21688 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-16 00:38:48.447  INFO [-,,,] 21688 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-16 00:38:48.524  INFO [-,,,] 21688 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2838ce45
+2019-02-16 00:38:50.539  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.aop.framework.CglibAopProxy          : Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2019-02-16 00:38:53.030  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-16 00:38:53.031  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-02-16 00:38:53.031  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2019-02-16 00:38:53.031  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2019-02-16 00:38:53.031  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-16 00:38:53.032  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-16 00:38:53.032  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-16 00:38:53.032  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-02-16 00:38:53.032  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2019-02-16 00:38:53.032  INFO [-,,,] 21688 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-16 00:38:53.240  INFO [-,,,] 21688 --- [localhost-startStop-1] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-02-16 00:38:53.388  INFO [-,,,] 21688 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-02-16 00:38:53.389  INFO [-,,,] 21688 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-02-16 00:38:53.639  INFO [-,,,] 21688 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-02-16 00:38:53.640  INFO [-,,,] 21688 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-02-16 00:38:54.549  INFO [-,,,] 21688 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-16 00:38:54.794  INFO [-,,,] 21688 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-16 00:38:54.847  INFO [-,,,] 21688 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-02-16 00:38:54.867  INFO [-,,,] 21688 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-16 00:38:55.012  INFO [-,,,] 21688 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-02-16 00:38:55.014  INFO [-,,,] 21688 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-16 00:38:55.074  INFO [-,,,] 21688 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-16 00:38:55.352  INFO [-,,,] 21688 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-16 00:38:55.833  INFO [-,,,] 21688 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-16 00:38:55.931  WARN [-,,,] 21688 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-16 00:38:55.932  INFO [-,,,] 21688 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-16 00:38:56.133  INFO [-,,,] 21688 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 00:38:56.887  INFO [-,,,] 21688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52c500ad: startup date [Sat Feb 16 00:38:40 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2fb31f9b
+2019-02-16 00:38:56.987  WARN [-,,,] 21688 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-16 00:38:57.106  INFO [-,,,] 21688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-16 00:38:57.111  INFO [-,,,] 21688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-16 00:38:57.129  INFO [-,,,] 21688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-16 00:38:57.129  INFO [-,,,] 21688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-16 00:38:57.193  INFO [-,,,] 21688 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 00:38:57.194  INFO [-,,,] 21688 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 00:38:59.015  INFO [-,,,] 21688 --- [restartedMain] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52c500ad: startup date [Sat Feb 16 00:38:40 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2fb31f9b] and template loader path [classpath:/templates/]
+2019-02-16 00:38:59.017  INFO [-,,,] 21688 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-16 00:38:59.417  WARN [-,,,] 21688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-02-16 00:39:00.258  INFO [-,,,] 21688 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-02-16 00:39:00.396  INFO [-,,,] 21688 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-02-16 00:39:00.396  INFO [-,,,] 21688 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2019-02-16 00:39:00.407  INFO [-,,,] 21688 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1550273940405 with initial instances count: 0
+2019-02-16 00:39:00.554  INFO [-,,,] 21688 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2019-02-16 00:39:00.556  INFO [-,,,] 21688 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-02-16 00:39:00.719  INFO [-,,,] 21688 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-02-16 00:39:00.719  INFO [-,,,] 21688 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-02-16 00:39:00.719  INFO [-,,,] 21688 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-02-16 00:39:00.719  INFO [-,,,] 21688 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-02-16 00:39:01.032  INFO [-,,,] 21688 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2019-02-16 00:39:01.049  INFO [-,,,] 21688 --- [restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2019-02-16 00:39:01.051  INFO [-,,,] 21688 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2019-02-16 00:39:01.256  INFO [-,,,] 21688 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-16 00:39:01.277  INFO [-,,,] 21688 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-16 00:39:01.279  INFO [-,,,] 21688 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-16 00:39:01.280  INFO [-,,,] 21688 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-16 00:39:01.422  INFO [-,,,] 21688 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-16 00:39:01.425  INFO [-,,,] 21688 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-16 00:39:01.437  INFO [-,,,] 21688 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-02-16 00:39:01.439  INFO [-,,,] 21688 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-02-16 00:39:01.443  INFO [-,,,] 21688 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-02-16 00:39:01.450  INFO [-,,,] 21688 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-02-16 00:39:01.464  INFO [-,,,] 21688 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-02-16 00:39:01.484  INFO [-,,,] 21688 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=52c500ad,type=ConfigurationPropertiesRebinder]
+2019-02-16 00:39:01.497  INFO [-,,,] 21688 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-02-16 00:39:01.516  INFO [-,,,] 21688 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-02-16 00:39:01.532  INFO [-,,,] 21688 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application hello-eureka-server with eureka with status UP
+2019-02-16 00:39:01.539  INFO [-,,,] 21688 --- [Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2019-02-16 00:39:01.543  INFO [-,,,] 21688 --- [Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-02-16 00:39:01.545  INFO [-,,,] 21688 --- [Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2019-02-16 00:39:01.572  INFO [-,,,] 21688 --- [Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2019-02-16 00:39:01.575  INFO [-,,,] 21688 --- [Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2019-02-16 00:39:01.576  INFO [-,,,] 21688 --- [Thread-19] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2019-02-16 00:39:01.577  INFO [-,,,] 21688 --- [Thread-19] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2019-02-16 00:39:01.577  INFO [-,,,] 21688 --- [Thread-19] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2019-02-16 00:39:01.605  INFO [-,,,] 21688 --- [Thread-19] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-02-16 00:39:01.656  INFO [-,,,] 21688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2019-02-16 00:39:01.659  INFO [-,,,] 21688 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2019-02-16 00:39:01.666  INFO [-,,,] 21688 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : Started HelloSpringCloudEurekaServerApplication in 24.262 seconds (JVM running for 31.374)
+2019-02-16 00:39:05.333  INFO [-,,,] 21688 --- [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-16 00:39:05.334  INFO [-,,,] 21688 --- [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-16 00:39:05.415  INFO [-,,,] 21688 --- [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 81 ms
+2019-02-16 00:39:05.504  WARN [-,fb77afdab667a02a,fb77afdab667a02a,false] 21688 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY     - 10.188.178.28:api-gateway    :8010
+2019-02-16 00:39:05.504  WARN [-,fb77afdab667a02a,fb77afdab667a02a,false] 21688 --- [http-nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY     - 10.188.178.28:api-gateway    :8010
+2019-02-16 00:39:05.710  INFO [-,78d5d734eb9b778c,78d5d734eb9b778c,false] 21688 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY    /10.188.178.28:api-gateway    :8010 with status UP (replication=false)
+2019-02-16 00:39:06.400  INFO [-,88dc0dfc9ee8e99e,88dc0dfc9ee8e99e,false] 21688 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY    /10.188.178.28:api-gateway    :8010 with status UP (replication=true)
+2019-02-16 00:39:12.461  INFO [-,,,] 21688 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@28a1df10}] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-localhost: startup date [Sat Feb 16 00:39:12 CET 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52c500ad
+2019-02-16 00:39:12.517  INFO [-,,,] 21688 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@28a1df10}] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 00:39:13.065  INFO [-,,,] 21688 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@28a1df10}] c.netflix.config.ChainedDynamicProperty  : Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-02-16 00:39:13.112  INFO [-,,,] 21688 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@28a1df10}] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2019-02-16 00:39:13.120  INFO [-,,,] 21688 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@28a1df10}] c.netflix.loadbalancer.BaseLoadBalancer  : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-02-16 00:39:13.183  INFO [-,,,] 21688 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@28a1df10}] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-02-16 00:39:13.194  INFO [-,,,] 21688 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@28a1df10}] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@37f978f8
+2019-02-16 00:40:01.593  INFO [-,,,] 21688 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:41:01.593  INFO [-,,,] 21688 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:42:01.593  INFO [-,,,] 21688 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:42:59.799  INFO [-,67eed9c4aba93922,67eed9c4aba93922,false] 21688 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY    /10.188.178.28:api-gateway    :8010 with status UP (replication=false)
+2019-02-16 00:43:00.144  INFO [-,b859f10e51b60065,b859f10e51b60065,false] 21688 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY    /10.188.178.28:api-gateway    :8010 with status UP (replication=true)
+2019-02-16 00:43:00.151  WARN [-,,,] 21688 --- [TaskBatchingWorker-target_localhost-5] c.n.eureka.cluster.ReplicationTask       : The replication of task API-GATEWAY    /10.188.178.28:api-gateway    :8010:Heartbeat@localhost failed with response code 409
+2019-02-16 00:43:00.151  WARN [-,,,] 21688 --- [TaskBatchingWorker-target_localhost-5] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:api-gateway    :8010 My Timestamp : 1550273945539, Peer's timestamp: 1550274179790
+2019-02-16 00:43:00.152  INFO [-,,,] 21688 --- [TaskBatchingWorker-target_localhost-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY    /10.188.178.28:api-gateway    :8010 with status UP (replication=true)
+2019-02-16 00:43:01.594  INFO [-,,,] 21688 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-02-16 00:43:09.332  INFO [-,0daadb486a3a991a,0daadb486a3a991a,false] 21688 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-16 00:43:09.844  INFO [-,f8aceecd86932469,f8aceecd86932469,false] 21688 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-16 00:44:01.601  INFO [-,,,] 21688 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2019-02-16 00:44:43.840  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-02-16 00:44:43.841  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52c500ad: startup date [Sat Feb 16 00:38:40 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2fb31f9b
+2019-02-16 00:44:43.842  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application hello-eureka-server with eureka with status DOWN
+2019-02-16 00:44:43.845  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2019-02-16 00:44:43.847  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2019-02-16 00:44:43.848  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2019-02-16 00:44:43.853  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-02-16 00:44:43.854  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-02-16 00:44:43.856  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-16 00:44:44.221  WARN [-,,,] 21688 --- [PollingServerListUpdater-0] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-16 00:44:44.221  INFO [-,,,] 21688 --- [PollingServerListUpdater-0] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-16 00:44:44.223  INFO [-,,,] 21688 --- [PollingServerListUpdater-0] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2af3b6b2
+2019-02-16 00:44:44.860  WARN [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2019-02-16 00:44:44.861  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] s.c.a.AnnotationConfigApplicationContext : Closing SpringClientFactory-localhost: startup date [Sat Feb 16 00:39:12 CET 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52c500ad
+2019-02-16 00:44:44.864  WARN [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source)
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source)
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source)
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(Unknown Source)
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at sun.rmi.transport.Transport$1.run(Unknown Source)
+	at sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-02-16 00:44:44.866  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-localhost
+2019-02-16 00:44:44.870  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-02-16 00:44:44.870  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-02-16 00:44:44.870  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-16 00:44:44.882  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-16 00:44:45.028  INFO [-,,,] 21688 --- [RMI TCP Connection(14)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-16 00:44:45.033  INFO [-,,,] 21688 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-02-16 00:44:45.041  WARN [-,,,] 21688 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2019-02-16 00:44:45.041  WARN [-,,,] 21688 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2019-02-16 00:44:45.051  INFO [-,,,] 21688 --- [Thread-29] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2019-02-16 00:44:58.765  INFO [-,,,] 23096 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : No active profile set, falling back to default profiles: default
+2019-02-16 00:44:58.781  INFO [-,,,] 23096 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5af4d69e: startup date [Sat Feb 16 00:44:58 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6e6913e4
+2019-02-16 00:45:01.193  INFO [-,,,] 23096 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-02-16 00:45:01.673  INFO [-,,,] 23096 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=324920b3-9543-3664-94ca-a4a8d661fd9b
+2019-02-16 00:45:01.717  INFO [-,,,] 23096 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 00:45:02.081  INFO [-,,,] 23096 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$55aa6bc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 00:45:02.161  INFO [-,,,] 23096 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$d52ab8f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 00:45:02.191  INFO [-,,,] 23096 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$71c46ec1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 00:45:03.514  INFO [-,,,] 23096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2019-02-16 00:45:03.540  INFO [-,,,] 23096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-16 00:45:03.540  INFO [-,,,] 23096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-02-16 00:45:03.545  INFO [-,,,] 23096 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\logiciels_windows\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;F:\logiciels_windows\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Marc Montan\AppData\Local\Microsoft\WindowsApps;;F:\logiciels_windows\spring-tool-suite-4-4.1.0.RELEASE-e4.10.0-win32.win32.x86_64\sts-4.1.0.RELEASE;;.]
+2019-02-16 00:45:03.800  INFO [-,,,] 23096 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-16 00:45:03.800  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5019 ms
+2019-02-16 00:45:04.250  WARN [-,,,] 23096 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-16 00:45:04.250  INFO [-,,,] 23096 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-16 00:45:04.266  INFO [-,,,] 23096 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4e9f7ac6
+2019-02-16 00:45:05.989  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.aop.framework.CglibAopProxy          : Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2019-02-16 00:45:08.130  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-02-16 00:45:09.102  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-16 00:45:09.103  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-02-16 00:45:09.103  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2019-02-16 00:45:09.103  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2019-02-16 00:45:09.103  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-16 00:45:09.103  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-16 00:45:09.104  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-16 00:45:09.104  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-02-16 00:45:09.104  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2019-02-16 00:45:09.104  INFO [-,,,] 23096 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-16 00:45:09.181  INFO [-,,,] 23096 --- [localhost-startStop-1] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-02-16 00:45:09.284  INFO [-,,,] 23096 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-02-16 00:45:09.286  INFO [-,,,] 23096 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-02-16 00:45:09.469  INFO [-,,,] 23096 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-02-16 00:45:09.469  INFO [-,,,] 23096 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-02-16 00:45:10.082  INFO [-,,,] 23096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-16 00:45:10.304  INFO [-,,,] 23096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-16 00:45:10.408  INFO [-,,,] 23096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-02-16 00:45:10.436  INFO [-,,,] 23096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-16 00:45:10.565  INFO [-,,,] 23096 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-02-16 00:45:10.570  INFO [-,,,] 23096 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-16 00:45:10.649  INFO [-,,,] 23096 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-16 00:45:10.787  INFO [-,,,] 23096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-16 00:45:11.191  INFO [-,,,] 23096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-16 00:45:11.283  WARN [-,,,] 23096 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-16 00:45:11.283  INFO [-,,,] 23096 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-16 00:45:11.541  INFO [-,,,] 23096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 00:45:12.252  INFO [-,,,] 23096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5af4d69e: startup date [Sat Feb 16 00:44:58 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6e6913e4
+2019-02-16 00:45:12.301  WARN [-,,,] 23096 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-16 00:45:12.382  INFO [-,,,] 23096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-16 00:45:12.383  INFO [-,,,] 23096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-16 00:45:12.396  INFO [-,,,] 23096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-16 00:45:12.397  INFO [-,,,] 23096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-16 00:45:12.457  INFO [-,,,] 23096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 00:45:12.457  INFO [-,,,] 23096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 00:45:14.071  INFO [-,,,] 23096 --- [restartedMain] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5af4d69e: startup date [Sat Feb 16 00:44:58 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6e6913e4] and template loader path [classpath:/templates/]
+2019-02-16 00:45:14.072  INFO [-,,,] 23096 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-16 00:45:14.484  WARN [-,,,] 23096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-02-16 00:45:15.342  INFO [-,,,] 23096 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-02-16 00:45:15.437  INFO [-,,,] 23096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-02-16 00:45:15.438  INFO [-,,,] 23096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2019-02-16 00:45:15.458  INFO [-,,,] 23096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1550274315456 with initial instances count: 0
+2019-02-16 00:45:15.586  INFO [-,,,] 23096 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2019-02-16 00:45:15.589  INFO [-,,,] 23096 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-02-16 00:45:15.737  INFO [-,,,] 23096 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-02-16 00:45:15.738  INFO [-,,,] 23096 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-02-16 00:45:15.738  INFO [-,,,] 23096 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-02-16 00:45:15.738  INFO [-,,,] 23096 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-02-16 00:45:15.889  INFO [-,,,] 23096 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2019-02-16 00:45:15.902  INFO [-,,,] 23096 --- [restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2019-02-16 00:45:15.903  INFO [-,,,] 23096 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2019-02-16 00:45:16.099  INFO [-,,,] 23096 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-16 00:45:16.121  INFO [-,,,] 23096 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-16 00:45:16.123  INFO [-,,,] 23096 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-16 00:45:16.124  INFO [-,,,] 23096 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-16 00:45:16.247  INFO [-,,,] 23096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-16 00:45:16.250  INFO [-,,,] 23096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-16 00:45:16.261  INFO [-,,,] 23096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-02-16 00:45:16.263  INFO [-,,,] 23096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-02-16 00:45:16.267  INFO [-,,,] 23096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-02-16 00:45:16.273  INFO [-,,,] 23096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-02-16 00:45:16.286  INFO [-,,,] 23096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-02-16 00:45:16.301  INFO [-,,,] 23096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5af4d69e,type=ConfigurationPropertiesRebinder]
+2019-02-16 00:45:16.311  INFO [-,,,] 23096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-02-16 00:45:16.331  INFO [-,,,] 23096 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-02-16 00:45:16.344  INFO [-,,,] 23096 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application hello-eureka-server with eureka with status UP
+2019-02-16 00:45:16.351  INFO [-,,,] 23096 --- [Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2019-02-16 00:45:16.352  INFO [-,,,] 23096 --- [Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-02-16 00:45:16.353  INFO [-,,,] 23096 --- [Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2019-02-16 00:45:16.375  INFO [-,,,] 23096 --- [Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2019-02-16 00:45:16.376  INFO [-,,,] 23096 --- [Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2019-02-16 00:45:16.376  INFO [-,,,] 23096 --- [Thread-19] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2019-02-16 00:45:16.376  INFO [-,,,] 23096 --- [Thread-19] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2019-02-16 00:45:16.376  INFO [-,,,] 23096 --- [Thread-19] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2019-02-16 00:45:16.391  INFO [-,,,] 23096 --- [Thread-19] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-02-16 00:45:16.439  INFO [-,,,] 23096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2019-02-16 00:45:16.440  INFO [-,,,] 23096 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2019-02-16 00:45:16.446  INFO [-,,,] 23096 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : Started HelloSpringCloudEurekaServerApplication in 20.594 seconds (JVM running for 27.596)
+2019-02-16 00:45:17.648  INFO [-,,,] 23096 --- [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-16 00:45:17.648  INFO [-,,,] 23096 --- [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-16 00:45:17.708  INFO [-,,,] 23096 --- [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
+2019-02-16 00:45:18.357  WARN [-,b28430b5f7c09cc3,b28430b5f7c09cc3,false] 23096 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY     - 10.188.178.28:api-gateway    :8010
+2019-02-16 00:45:18.357  WARN [-,b28430b5f7c09cc3,b28430b5f7c09cc3,false] 23096 --- [http-nio-8761-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY     - 10.188.178.28:api-gateway    :8010
+2019-02-16 00:45:18.478  INFO [-,9a7ef09fbec1f94d,9a7ef09fbec1f94d,false] 23096 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY    /10.188.178.28:api-gateway    :8010 with status UP (replication=false)
+2019-02-16 00:45:19.149  INFO [-,5dba1521402f0735,5dba1521402f0735,false] 23096 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY    /10.188.178.28:api-gateway    :8010 with status UP (replication=true)
+2019-02-16 00:45:22.913  INFO [-,,,] 23096 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5be22587}] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-localhost: startup date [Sat Feb 16 00:45:22 CET 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5af4d69e
+2019-02-16 00:45:22.993  INFO [-,,,] 23096 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5be22587}] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 00:45:23.437  INFO [-,,,] 23096 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5be22587}] c.netflix.config.ChainedDynamicProperty  : Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-02-16 00:45:23.471  INFO [-,,,] 23096 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5be22587}] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2019-02-16 00:45:23.477  INFO [-,,,] 23096 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5be22587}] c.netflix.loadbalancer.BaseLoadBalancer  : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-02-16 00:45:23.484  INFO [-,,,] 23096 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5be22587}] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-02-16 00:45:23.490  INFO [-,,,] 23096 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5be22587}] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@4f393be1
+2019-02-16 00:45:24.971  WARN [-,c3765c9a5d007bfe,c3765c9a5d007bfe,false] 23096 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: HELLO-EUREKA-HISTRIX   - 10.188.178.28:hello-eureka-histrix  :8010
+2019-02-16 00:45:24.972  WARN [-,c3765c9a5d007bfe,c3765c9a5d007bfe,false] 23096 --- [http-nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Renew): HELLO-EUREKA-HISTRIX   - 10.188.178.28:hello-eureka-histrix  :8010
+2019-02-16 00:45:24.981  INFO [-,53fb29ae5d8d6176,53fb29ae5d8d6176,true] 23096 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-16 00:45:25.080  INFO [-,41784e167af64c33,41784e167af64c33,false] 23096 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-16 00:46:11.626  INFO [-,88785f9c7ad681f0,88785f9c7ad681f0,false] 23096 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-16 00:46:12.296  INFO [-,ab9cecbeb40f167e,ab9cecbeb40f167e,false] 23096 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-16 00:46:16.378  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:46:22.036  INFO [-,1713a243b4a13f78,1713a243b4a13f78,false] 23096 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-16 00:46:22.313  INFO [-,9620807c3f7a6d44,9620807c3f7a6d44,false] 23096 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-16 00:46:22.319  WARN [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-5] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010:Heartbeat@localhost failed with response code 409
+2019-02-16 00:46:22.319  WARN [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-5] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-eureka-histrix  :8010 My Timestamp : 1550274371616, Peer's timestamp: 1550274382029
+2019-02-16 00:46:22.320  INFO [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-16 00:46:55.048  INFO [-,6d9685a480450e90,6d9685a480450e90,false] 23096 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-16 00:46:55.556  INFO [-,508b8ec58f41acd2,508b8ec58f41acd2,false] 23096 --- [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-16 00:47:16.379  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:47:16.379  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=2, evictionLimit=1)
+2019-02-16 00:47:16.379  WARN [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for API-GATEWAY    /10.188.178.28:api-gateway    :8010
+2019-02-16 00:47:16.382  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY    /10.188.178.28:api-gateway    :8010 (replication=false)
+2019-02-16 00:47:21.698  INFO [-,4d965f206341d144,4d965f206341d144,false] 23096 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-16 00:47:22.207  INFO [-,6fd2801522089d55,6fd2801522089d55,false] 23096 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-16 00:48:16.380  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:49:16.381  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-02-16 00:50:16.381  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:51:16.382  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:52:16.382  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:53:01.528  INFO [-,01cf34a6083ec4b8,01cf34a6083ec4b8,false] 23096 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-16 00:53:02.037  INFO [-,1f353a836876d056,1f353a836876d056,false] 23096 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-16 00:53:16.383  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:54:16.383  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:54:29.320  INFO [-,79e7306e84c7f51e,79e7306e84c7f51e,false] 23096 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=false)
+2019-02-16 00:54:29.822  INFO [-,09080f0b0c3b6032,09080f0b0c3b6032,false] 23096 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-16 00:54:29.825  WARN [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-4] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010:Heartbeat@localhost failed with response code 409
+2019-02-16 00:54:29.825  WARN [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-4] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-eureka-histrix  :8010 My Timestamp : 1550274781485, Peer's timestamp: 1550274869313
+2019-02-16 00:54:29.825  INFO [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status DOWN (replication=true)
+2019-02-16 00:54:42.926  INFO [-,830d5308e7dcd7f6,830d5308e7dcd7f6,false] 23096 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=false)
+2019-02-16 00:54:43.435  INFO [-,4034272f3e687a07,4034272f3e687a07,false] 23096 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-16 00:54:43.439  WARN [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-18] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010:Heartbeat@localhost failed with response code 409
+2019-02-16 00:54:43.439  WARN [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-18] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-eureka-histrix  :8010 My Timestamp : 1550274869313, Peer's timestamp: 1550274882920
+2019-02-16 00:54:43.439  INFO [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-18] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 with status UP (replication=true)
+2019-02-16 00:55:16.383  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:55:51.721  INFO [-,c9b4eafa4a5b9d0a,c9b4eafa4a5b9d0a,false] 23096 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=false)
+2019-02-16 00:55:52.232  INFO [-,4ba0f2da39dc9e6b,4ba0f2da39dc9e6b,false] 23096 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=true)
+2019-02-16 00:56:16.383  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 00:56:16.383  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2019-02-16 00:56:16.384  WARN [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010
+2019-02-16 00:56:16.384  INFO [-,,,] 23096 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-EUREKA-HISTRIX  /10.188.178.28:hello-eureka-histrix  :8010 (replication=false)
+2019-02-16 00:56:35.048  INFO [-,7f2e558e502d77bc,7f2e558e502d77bc,false] 23096 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 (replication=false)
+2019-02-16 00:56:35.051  INFO [-,451c9d12c697fab0,451c9d12c697fab0,false] 23096 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=false)
+2019-02-16 00:56:35.346  INFO [-,c5cbb55bac3ac0ec,c5cbb55bac3ac0ec,false] 23096 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 (replication=true)
+2019-02-16 00:56:35.347  INFO [-,c5cbb55bac3ac0ec,c5cbb55bac3ac0ec,false] 23096 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=true)
+2019-02-16 00:56:35.348  WARN [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-5] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090:Heartbeat@localhost failed with response code 409
+2019-02-16 00:56:35.348  WARN [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-5] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-ribbon-eureka-client:9090 My Timestamp : 1550274951557, Peer's timestamp: 1550274995046
+2019-02-16 00:56:35.349  INFO [-,,,] 23096 --- [TaskBatchingWorker-target_localhost-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=true)
+2019-02-16 00:56:45.225  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-02-16 00:56:45.225  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5af4d69e: startup date [Sat Feb 16 00:44:58 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6e6913e4
+2019-02-16 00:56:45.226  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application hello-eureka-server with eureka with status DOWN
+2019-02-16 00:56:45.229  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2019-02-16 00:56:45.230  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2019-02-16 00:56:45.232  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2019-02-16 00:56:45.236  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-02-16 00:56:45.237  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-02-16 00:56:45.239  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-16 00:56:46.244  WARN [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2019-02-16 00:56:46.245  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] s.c.a.AnnotationConfigApplicationContext : Closing SpringClientFactory-localhost: startup date [Sat Feb 16 00:45:22 CET 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5af4d69e
+2019-02-16 00:56:46.248  WARN [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source)
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source)
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source)
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(Unknown Source)
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at sun.rmi.transport.Transport$1.run(Unknown Source)
+	at sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-02-16 00:56:46.251  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-localhost
+2019-02-16 00:56:46.255  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-02-16 00:56:46.255  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-02-16 00:56:46.255  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-16 00:56:46.269  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-16 00:56:46.484  INFO [-,,,] 23096 --- [RMI TCP Connection(23)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-16 00:56:46.490  INFO [-,,,] 23096 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-02-16 00:56:46.510  WARN [-,,,] 23096 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5be22587}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.DualStackPlainSocketImpl.connect0(Native Method)
+ java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+ java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+ java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+ java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+ java.net.PlainSocketImpl.connect(Unknown Source)
+ java.net.SocksSocketImpl.connect(Unknown Source)
+ java.net.Socket.connect(Unknown Source)
+ java.net.Socket.connect(Unknown Source)
+ sun.net.NetworkClient.doConnect(Unknown Source)
+ sun.net.www.http.HttpClient.openServer(Unknown Source)
+ sun.net.www.http.HttpClient.openServer(Unknown Source)
+ sun.net.www.http.HttpClient.<init>(Unknown Source)
+ sun.net.www.http.HttpClient.New(Unknown Source)
+ sun.net.www.http.HttpClient.New(Unknown Source)
+ sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+ sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+ sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+ sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+ org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+ org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+ org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+ org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:687)
+ org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:132)
+ org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:622)
+ org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:112)
+ org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:123)
+ org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:115)
+ zipkin2.Call$Base.execute(Call.java:379)
+ zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:286)
+ zipkin2.reporter.AsyncReporter$Builder$1.run(AsyncReporter.java:190)
+2019-02-16 00:56:46.513  WARN [-,,,] 23096 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2019-02-16 00:56:46.515  WARN [-,,,] 23096 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2019-02-16 00:56:46.541  INFO [-,,,] 23096 --- [Thread-29] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2019-02-16 01:02:36.689  INFO [-,,,] 1276 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : No active profile set, falling back to default profiles: default
+2019-02-16 01:02:36.712  INFO [-,,,] 1276 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10824dbe: startup date [Sat Feb 16 01:02:36 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@70e6ec3c
+2019-02-16 01:02:39.114  INFO [-,,,] 1276 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-02-16 01:02:39.738  INFO [-,,,] 1276 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=324920b3-9543-3664-94ca-a4a8d661fd9b
+2019-02-16 01:02:39.844  INFO [-,,,] 1276 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 01:02:40.251  INFO [-,,,] 1276 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$83e2533f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 01:02:40.333  INFO [-,,,] 1276 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$362a071] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 01:02:40.358  INFO [-,,,] 1276 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9ffc563c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 01:02:41.364  INFO [-,,,] 1276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2019-02-16 01:02:41.392  INFO [-,,,] 1276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-16 01:02:41.392  INFO [-,,,] 1276 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-02-16 01:02:41.397  INFO [-,,,] 1276 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\logiciels_windows\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;F:\logiciels_windows\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Marc Montan\AppData\Local\Microsoft\WindowsApps;;F:\logiciels_windows\spring-tool-suite-4-4.1.0.RELEASE-e4.10.0-win32.win32.x86_64\sts-4.1.0.RELEASE;;.]
+2019-02-16 01:02:41.730  INFO [-,,,] 1276 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-16 01:02:41.731  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5019 ms
+2019-02-16 01:02:42.164  WARN [-,,,] 1276 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-16 01:02:42.164  INFO [-,,,] 1276 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-16 01:02:42.177  INFO [-,,,] 1276 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@732c67ea
+2019-02-16 01:02:43.841  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.aop.framework.CglibAopProxy          : Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2019-02-16 01:02:46.101  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-16 01:02:46.102  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-02-16 01:02:46.102  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2019-02-16 01:02:46.102  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2019-02-16 01:02:46.102  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-16 01:02:46.103  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-16 01:02:46.103  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-16 01:02:46.103  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-02-16 01:02:46.103  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2019-02-16 01:02:46.103  INFO [-,,,] 1276 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-16 01:02:46.181  INFO [-,,,] 1276 --- [localhost-startStop-1] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-02-16 01:02:46.337  INFO [-,,,] 1276 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-02-16 01:02:46.338  INFO [-,,,] 1276 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-02-16 01:02:46.490  INFO [-,,,] 1276 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-02-16 01:02:46.490  INFO [-,,,] 1276 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-02-16 01:02:47.055  INFO [-,,,] 1276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-16 01:02:47.266  INFO [-,,,] 1276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-16 01:02:47.359  INFO [-,,,] 1276 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-02-16 01:02:47.384  INFO [-,,,] 1276 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-16 01:02:47.490  INFO [-,,,] 1276 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-02-16 01:02:47.492  INFO [-,,,] 1276 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-16 01:02:47.544  INFO [-,,,] 1276 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-16 01:02:47.677  INFO [-,,,] 1276 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-16 01:02:48.010  INFO [-,,,] 1276 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-16 01:02:48.086  WARN [-,,,] 1276 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-16 01:02:48.086  INFO [-,,,] 1276 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-16 01:02:48.263  INFO [-,,,] 1276 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 01:02:48.938  INFO [-,,,] 1276 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10824dbe: startup date [Sat Feb 16 01:02:36 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@70e6ec3c
+2019-02-16 01:02:48.987  WARN [-,,,] 1276 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-16 01:02:49.069  INFO [-,,,] 1276 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-16 01:02:49.070  INFO [-,,,] 1276 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-16 01:02:49.083  INFO [-,,,] 1276 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-16 01:02:49.083  INFO [-,,,] 1276 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-16 01:02:49.139  INFO [-,,,] 1276 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 01:02:49.140  INFO [-,,,] 1276 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 01:02:50.788  INFO [-,,,] 1276 --- [restartedMain] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10824dbe: startup date [Sat Feb 16 01:02:36 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@70e6ec3c] and template loader path [classpath:/templates/]
+2019-02-16 01:02:50.789  INFO [-,,,] 1276 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-16 01:02:51.169  INFO [-,,,] 1276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-16 01:02:51.974  INFO [-,,,] 1276 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-02-16 01:02:52.015  INFO [-,,,] 1276 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-02-16 01:02:52.016  INFO [-,,,] 1276 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2019-02-16 01:02:52.023  INFO [-,,,] 1276 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1550275372022 with initial instances count: 0
+2019-02-16 01:02:52.120  INFO [-,,,] 1276 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2019-02-16 01:02:52.122  INFO [-,,,] 1276 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-02-16 01:02:52.235  INFO [-,,,] 1276 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-02-16 01:02:52.236  INFO [-,,,] 1276 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-02-16 01:02:52.236  INFO [-,,,] 1276 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-02-16 01:02:52.236  INFO [-,,,] 1276 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-02-16 01:02:52.396  INFO [-,,,] 1276 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2019-02-16 01:02:52.407  INFO [-,,,] 1276 --- [restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2019-02-16 01:02:52.408  INFO [-,,,] 1276 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2019-02-16 01:02:52.573  INFO [-,,,] 1276 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-16 01:02:52.591  INFO [-,,,] 1276 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-16 01:02:52.592  INFO [-,,,] 1276 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-16 01:02:52.593  INFO [-,,,] 1276 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-16 01:02:52.774  INFO [-,,,] 1276 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-16 01:02:52.790  INFO [-,,,] 1276 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-16 01:02:52.830  INFO [-,,,] 1276 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-02-16 01:02:52.833  INFO [-,,,] 1276 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-02-16 01:02:52.847  INFO [-,,,] 1276 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-02-16 01:02:52.862  INFO [-,,,] 1276 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-02-16 01:02:52.880  INFO [-,,,] 1276 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-02-16 01:02:52.909  INFO [-,,,] 1276 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=10824dbe,type=ConfigurationPropertiesRebinder]
+2019-02-16 01:02:52.920  INFO [-,,,] 1276 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-02-16 01:02:52.944  INFO [-,,,] 1276 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-02-16 01:02:52.993  INFO [-,,,] 1276 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application hello-eureka-server with eureka with status UP
+2019-02-16 01:02:53.000  INFO [-,,,] 1276 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2019-02-16 01:02:53.001  INFO [-,,,] 1276 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-02-16 01:02:53.002  INFO [-,,,] 1276 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2019-02-16 01:02:53.021  INFO [-,,,] 1276 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2019-02-16 01:02:53.022  INFO [-,,,] 1276 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2019-02-16 01:02:53.022  INFO [-,,,] 1276 --- [Thread-21] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2019-02-16 01:02:53.022  INFO [-,,,] 1276 --- [Thread-21] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2019-02-16 01:02:53.022  INFO [-,,,] 1276 --- [Thread-21] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2019-02-16 01:02:53.037  INFO [-,,,] 1276 --- [Thread-21] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-02-16 01:02:53.087  INFO [-,,,] 1276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2019-02-16 01:02:53.089  INFO [-,,,] 1276 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2019-02-16 01:02:53.093  INFO [-,,,] 1276 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : Started HelloSpringCloudEurekaServerApplication in 20.149 seconds (JVM running for 27.118)
+2019-02-16 01:03:41.573  INFO [-,,,] 1276 --- [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-16 01:03:41.573  INFO [-,,,] 1276 --- [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-16 01:03:41.632  INFO [-,,,] 1276 --- [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 59 ms
+2019-02-16 01:03:42.067  INFO [-,1ec0e412d9ff3c29,1ec0e412d9ff3c29,false] 1276 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 with status UP (replication=false)
+2019-02-16 01:03:42.761  INFO [-,8b55959b629b3917,8b55959b629b3917,false] 1276 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-16 01:03:44.759  INFO [-,,,] 1276 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5135dca2}] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-localhost: startup date [Sat Feb 16 01:03:44 CET 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10824dbe
+2019-02-16 01:03:44.859  INFO [-,,,] 1276 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5135dca2}] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 01:03:45.164  INFO [-,,,] 1276 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5135dca2}] c.netflix.config.ChainedDynamicProperty  : Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-02-16 01:03:45.192  INFO [-,,,] 1276 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5135dca2}] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2019-02-16 01:03:45.197  INFO [-,,,] 1276 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5135dca2}] c.netflix.loadbalancer.BaseLoadBalancer  : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-02-16 01:03:45.203  INFO [-,,,] 1276 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5135dca2}] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-02-16 01:03:45.208  INFO [-,,,] 1276 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5135dca2}] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@12c1630b
+2019-02-16 01:03:53.025  INFO [-,,,] 1276 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:04:53.025  INFO [-,,,] 1276 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:05:53.025  INFO [-,,,] 1276 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:06:09.399  INFO [-,53556a54152303e3,53556a54152303e3,false] 1276 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 (replication=false)
+2019-02-16 01:06:09.658  WARN [-,1685ef7798ff7c96,1685ef7798ff7c96,false] 1276 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: HELLO-2-RIBBON-EUREKA-CLIENT - 10.188.178.28:hello-2-ribbon-eureka-client:9091
+2019-02-16 01:06:09.658  WARN [-,1685ef7798ff7c96,1685ef7798ff7c96,false] 1276 --- [http-nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Renew): HELLO-2-RIBBON-EUREKA-CLIENT - 10.188.178.28:hello-2-ribbon-eureka-client:9091
+2019-02-16 01:06:09.659  WARN [-,1685ef7798ff7c96,1685ef7798ff7c96,false] 1276 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091
+2019-02-16 01:06:09.660  INFO [-,1685ef7798ff7c96,1685ef7798ff7c96,false] 1276 --- [http-nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): HELLO-2-RIBBON-EUREKA-CLIENT - 10.188.178.28:hello-2-ribbon-eureka-client:9091
+2019-02-16 01:06:09.661  WARN [-,,,] 1276 --- [TaskBatchingWorker-target_localhost-14] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091:Heartbeat@localhost failed with response code 404
+2019-02-16 01:06:09.661  WARN [-,,,] 1276 --- [TaskBatchingWorker-target_localhost-14] c.netflix.eureka.cluster.PeerEurekaNode  : HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091:Heartbeat@localhost: missing entry.
+2019-02-16 01:06:09.662  WARN [-,,,] 1276 --- [TaskBatchingWorker-target_localhost-14] c.netflix.eureka.cluster.PeerEurekaNode  : HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091:Heartbeat@localhost: cannot find instance id 10.188.178.28:hello-2-ribbon-eureka-client:9091 and hence replicating the instance with status UP
+2019-02-16 01:06:09.662  WARN [-,,,] 1276 --- [TaskBatchingWorker-target_localhost-14] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091:Cancel@localhost failed with response code 404
+2019-02-16 01:06:09.662  WARN [-,,,] 1276 --- [TaskBatchingWorker-target_localhost-14] c.netflix.eureka.cluster.PeerEurekaNode  : HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091:Cancel@localhost: missing entry.
+2019-02-16 01:06:10.175  INFO [-,5b0088d6460454bf,5b0088d6460454bf,false] 1276 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-16 01:06:37.652  INFO [-,d8ddacaee23c536a,d8ddacaee23c536a,false] 1276 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=false)
+2019-02-16 01:06:38.160  INFO [-,c01fec8205f0770b,c01fec8205f0770b,false] 1276 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=true)
+2019-02-16 01:06:53.025  INFO [-,,,] 1276 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:06:53.025  INFO [-,,,] 1276 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2019-02-16 01:06:53.026  WARN [-,,,] 1276 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091
+2019-02-16 01:06:53.026  INFO [-,,,] 1276 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 (replication=false)
+2019-02-16 01:07:53.026  INFO [-,,,] 1276 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:08:07.187  INFO [-,956377b253544e74,956377b253544e74,false] 1276 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 with status UP (replication=false)
+2019-02-16 01:08:07.695  INFO [-,cfdf939f54edeaf8,cfdf939f54edeaf8,false] 1276 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-16 01:08:52.990  INFO [-,cec43c70fd601efe,cec43c70fd601efe,false] 1276 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 (replication=false)
+2019-02-16 01:08:53.001  INFO [-,8dd513f177fd3c88,8dd513f177fd3c88,false] 1276 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 with status UP (replication=false)
+2019-02-16 01:08:53.027  INFO [-,,,] 1276 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-02-16 01:08:53.593  INFO [-,afb44333ac513476,afb44333ac513476,false] 1276 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 (replication=true)
+2019-02-16 01:08:53.614  INFO [-,afb44333ac513476,afb44333ac513476,false] 1276 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-2-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-2-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-16 01:09:00.266  INFO [-,6194fdc6614af929,6194fdc6614af929,false] 1276 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=false)
+2019-02-16 01:09:00.775  INFO [-,19c134b57e971fb1,19c134b57e971fb1,true] 1276 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-16 01:09:17.349  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-02-16 01:09:17.350  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10824dbe: startup date [Sat Feb 16 01:02:36 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@70e6ec3c
+2019-02-16 01:09:17.350  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application hello-eureka-server with eureka with status DOWN
+2019-02-16 01:09:17.353  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2019-02-16 01:09:17.354  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2019-02-16 01:09:17.356  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2019-02-16 01:09:17.361  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-02-16 01:09:17.361  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-02-16 01:09:17.363  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-16 01:09:17.779  WARN [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to AsyncReporter.close()
+2019-02-16 01:09:17.780  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] s.c.a.AnnotationConfigApplicationContext : Closing SpringClientFactory-localhost: startup date [Sat Feb 16 01:03:44 CET 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10824dbe
+2019-02-16 01:09:17.783  WARN [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source)
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source)
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source)
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(Unknown Source)
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at sun.rmi.transport.Transport$1.run(Unknown Source)
+	at sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-02-16 01:09:17.784  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-localhost
+2019-02-16 01:09:17.787  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-02-16 01:09:17.787  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-02-16 01:09:17.788  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-16 01:09:17.801  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-16 01:09:17.999  INFO [-,,,] 1276 --- [RMI TCP Connection(17)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-16 01:09:18.002  INFO [-,,,] 1276 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-02-16 01:09:18.009  WARN [-,,,] 1276 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2019-02-16 01:09:18.010  WARN [-,,,] 1276 --- [localhost-startStop-2] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2019-02-16 01:09:18.019  INFO [-,,,] 1276 --- [Thread-31] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2019-02-16 01:09:32.227  INFO [-,,,] 27400 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : No active profile set, falling back to default profiles: default
+2019-02-16 01:09:32.246  INFO [-,,,] 27400 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dbd0841: startup date [Sat Feb 16 01:09:32 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6ac0478a
+2019-02-16 01:09:34.961  INFO [-,,,] 27400 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2019-02-16 01:09:35.474  INFO [-,,,] 27400 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=324920b3-9543-3664-94ca-a4a8d661fd9b
+2019-02-16 01:09:35.518  INFO [-,,,] 27400 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 01:09:35.872  INFO [-,,,] 27400 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b054114c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 01:09:35.964  INFO [-,,,] 27400 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$2fd45e7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 01:09:35.984  INFO [-,,,] 27400 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cc6e1449] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-16 01:09:37.411  INFO [-,,,] 27400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2019-02-16 01:09:37.438  INFO [-,,,] 27400 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-16 01:09:37.439  INFO [-,,,] 27400 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-02-16 01:09:37.444  INFO [-,,,] 27400 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\logiciels_windows\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;F:\logiciels_windows\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Marc Montan\AppData\Local\Microsoft\WindowsApps;;F:\logiciels_windows\spring-tool-suite-4-4.1.0.RELEASE-e4.10.0-win32.win32.x86_64\sts-4.1.0.RELEASE;;.]
+2019-02-16 01:09:37.783  INFO [-,,,] 27400 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-16 01:09:37.783  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5537 ms
+2019-02-16 01:09:38.174  WARN [-,,,] 27400 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-16 01:09:38.174  INFO [-,,,] 27400 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-16 01:09:38.187  INFO [-,,,] 27400 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@34854d0d
+2019-02-16 01:09:40.171  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.aop.framework.CglibAopProxy          : Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2019-02-16 01:09:42.593  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-16 01:09:42.593  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-02-16 01:09:42.593  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2019-02-16 01:09:42.594  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2019-02-16 01:09:42.594  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-16 01:09:42.594  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-16 01:09:42.594  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-16 01:09:42.594  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-02-16 01:09:42.594  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2019-02-16 01:09:42.594  INFO [-,,,] 27400 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-16 01:09:42.677  INFO [-,,,] 27400 --- [localhost-startStop-1] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-02-16 01:09:42.803  INFO [-,,,] 27400 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-02-16 01:09:42.805  INFO [-,,,] 27400 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-02-16 01:09:42.959  INFO [-,,,] 27400 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-02-16 01:09:42.959  INFO [-,,,] 27400 --- [localhost-startStop-1] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-02-16 01:09:43.612  INFO [-,,,] 27400 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-16 01:09:43.849  INFO [-,,,] 27400 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-16 01:09:43.905  INFO [-,,,] 27400 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-02-16 01:09:43.922  INFO [-,,,] 27400 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-16 01:09:44.033  INFO [-,,,] 27400 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-02-16 01:09:44.035  INFO [-,,,] 27400 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-16 01:09:44.091  INFO [-,,,] 27400 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-16 01:09:44.407  INFO [-,,,] 27400 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-16 01:09:44.703  INFO [-,,,] 27400 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-16 01:09:44.793  WARN [-,,,] 27400 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-02-16 01:09:44.794  INFO [-,,,] 27400 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-16 01:09:44.990  INFO [-,,,] 27400 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 01:09:45.771  INFO [-,,,] 27400 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dbd0841: startup date [Sat Feb 16 01:09:32 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6ac0478a
+2019-02-16 01:09:45.827  WARN [-,,,] 27400 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-16 01:09:45.928  INFO [-,,,] 27400 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-16 01:09:45.930  INFO [-,,,] 27400 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-16 01:09:45.943  INFO [-,,,] 27400 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-16 01:09:45.943  INFO [-,,,] 27400 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-16 01:09:46.025  INFO [-,,,] 27400 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 01:09:46.025  INFO [-,,,] 27400 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-16 01:09:47.470  INFO [-,,,] 27400 --- [restartedMain] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dbd0841: startup date [Sat Feb 16 01:09:32 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6ac0478a] and template loader path [classpath:/templates/]
+2019-02-16 01:09:47.471  INFO [-,,,] 27400 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-16 01:09:48.148  INFO [-,,,] 27400 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-16 01:09:49.076  INFO [-,,,] 27400 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-02-16 01:09:49.112  INFO [-,,,] 27400 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-02-16 01:09:49.112  INFO [-,,,] 27400 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2019-02-16 01:09:49.120  INFO [-,,,] 27400 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1550275789119 with initial instances count: 0
+2019-02-16 01:09:49.290  INFO [-,,,] 27400 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2019-02-16 01:09:49.292  INFO [-,,,] 27400 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-02-16 01:09:49.433  INFO [-,,,] 27400 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-02-16 01:09:49.434  INFO [-,,,] 27400 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-02-16 01:09:49.434  INFO [-,,,] 27400 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-02-16 01:09:49.434  INFO [-,,,] 27400 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-02-16 01:09:49.619  INFO [-,,,] 27400 --- [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2019-02-16 01:09:49.634  INFO [-,,,] 27400 --- [restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2019-02-16 01:09:49.635  INFO [-,,,] 27400 --- [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2019-02-16 01:09:49.960  INFO [-,,,] 27400 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-16 01:09:49.978  INFO [-,,,] 27400 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-16 01:09:49.980  INFO [-,,,] 27400 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-16 01:09:49.981  INFO [-,,,] 27400 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-16 01:09:50.106  INFO [-,,,] 27400 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-16 01:09:50.109  INFO [-,,,] 27400 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-16 01:09:50.123  INFO [-,,,] 27400 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-02-16 01:09:50.125  INFO [-,,,] 27400 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-02-16 01:09:50.129  INFO [-,,,] 27400 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-02-16 01:09:50.137  INFO [-,,,] 27400 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-02-16 01:09:50.156  INFO [-,,,] 27400 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-02-16 01:09:50.175  INFO [-,,,] 27400 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5dbd0841,type=ConfigurationPropertiesRebinder]
+2019-02-16 01:09:50.186  INFO [-,,,] 27400 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-02-16 01:09:50.208  INFO [-,,,] 27400 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-02-16 01:09:50.228  INFO [-,,,] 27400 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application hello-eureka-server with eureka with status UP
+2019-02-16 01:09:50.235  INFO [-,,,] 27400 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2019-02-16 01:09:50.236  INFO [-,,,] 27400 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-02-16 01:09:50.238  INFO [-,,,] 27400 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2019-02-16 01:09:50.258  INFO [-,,,] 27400 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2019-02-16 01:09:50.259  INFO [-,,,] 27400 --- [Thread-21] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2019-02-16 01:09:50.260  INFO [-,,,] 27400 --- [Thread-21] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2019-02-16 01:09:50.260  INFO [-,,,] 27400 --- [Thread-21] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2019-02-16 01:09:50.260  INFO [-,,,] 27400 --- [Thread-21] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2019-02-16 01:09:50.275  INFO [-,,,] 27400 --- [Thread-21] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-02-16 01:09:50.325  INFO [-,,,] 27400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2019-02-16 01:09:50.327  INFO [-,,,] 27400 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2019-02-16 01:09:50.332  INFO [-,,,] 27400 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : Started HelloSpringCloudEurekaServerApplication in 21.276 seconds (JVM running for 28.243)
+2019-02-16 01:09:50.396  INFO [-,,,] 27400 --- [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-16 01:09:50.397  INFO [-,,,] 27400 --- [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-16 01:09:50.455  INFO [-,,,] 27400 --- [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+2019-02-16 01:09:52.063  INFO [-,,,] 27400 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@77631322}] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-localhost: startup date [Sat Feb 16 01:09:52 CET 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dbd0841
+2019-02-16 01:09:52.119  INFO [-,,,] 27400 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@77631322}] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 01:09:52.424  INFO [-,,,] 27400 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@77631322}] c.netflix.config.ChainedDynamicProperty  : Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-02-16 01:09:52.456  INFO [-,,,] 27400 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@77631322}] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2019-02-16 01:09:52.461  INFO [-,,,] 27400 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@77631322}] c.netflix.loadbalancer.BaseLoadBalancer  : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-02-16 01:09:52.470  INFO [-,,,] 27400 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@77631322}] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-02-16 01:09:52.478  INFO [-,,,] 27400 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@77631322}] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@55dc497c
+2019-02-16 01:09:57.403  WARN [-,b05f25a3a4fbbd2f,b05f25a3a4fbbd2f,false] 27400 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: HELLO-RIBBON-EUREKA-CLIENT - 10.188.178.28:hello-ribbon-eureka-client:9091
+2019-02-16 01:09:57.403  WARN [-,b05f25a3a4fbbd2f,b05f25a3a4fbbd2f,false] 27400 --- [http-nio-8761-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Renew): HELLO-RIBBON-EUREKA-CLIENT - 10.188.178.28:hello-ribbon-eureka-client:9091
+2019-02-16 01:09:57.519  INFO [-,8c40ab4d47b710d5,8c40ab4d47b710d5,true] 27400 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=false)
+2019-02-16 01:09:57.933  WARN [-,1e0462f16ee21f70,1e0462f16ee21f70,false] 27400 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: HELLO-RIBBON-EUREKA-CLIENT - 10.188.178.28:hello-ribbon-eureka-client:9090
+2019-02-16 01:09:57.933  WARN [-,1e0462f16ee21f70,1e0462f16ee21f70,false] 27400 --- [http-nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Renew): HELLO-RIBBON-EUREKA-CLIENT - 10.188.178.28:hello-ribbon-eureka-client:9090
+2019-02-16 01:09:57.943  INFO [-,a5935c03ebf49cea,a5935c03ebf49cea,false] 27400 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=false)
+2019-02-16 01:09:58.163  INFO [-,1afc0b2847ca9358,1afc0b2847ca9358,false] 27400 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-16 01:09:58.165  INFO [-,1afc0b2847ca9358,1afc0b2847ca9358,false] 27400 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=true)
+2019-02-16 01:10:50.262  INFO [-,,,] 27400 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:11:34.982  INFO [-,878850334eaa93ea,878850334eaa93ea,false] 27400 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=false)
+2019-02-16 01:11:34.982  INFO [-,537c3517edee378c,537c3517edee378c,false] 27400 --- [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 (replication=false)
+2019-02-16 01:11:35.495  INFO [-,7ee6102ff01b6e2d,7ee6102ff01b6e2d,false] 27400 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-16 01:11:35.496  INFO [-,7ee6102ff01b6e2d,7ee6102ff01b6e2d,false] 27400 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 (replication=true)
+2019-02-16 01:11:42.771  INFO [-,bdfa769fc2d3831d,bdfa769fc2d3831d,false] 27400 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=false)
+2019-02-16 01:11:43.281  INFO [-,b38406fae2e59091,b38406fae2e59091,false] 27400 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9091 with status UP (replication=true)
+2019-02-16 01:11:50.263  INFO [-,,,] 27400 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:12:20.480  INFO [-,a25d9935b2ccafa3,a25d9935b2ccafa3,false] 27400 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 (replication=false)
+2019-02-16 01:12:20.486  INFO [-,51ba5336713e5c83,51ba5336713e5c83,false] 27400 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=false)
+2019-02-16 01:12:20.502  INFO [-,1d404a57cd785bd8,1d404a57cd785bd8,false] 27400 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 (replication=true)
+2019-02-16 01:12:20.504  INFO [-,1d404a57cd785bd8,1d404a57cd785bd8,false] 27400 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=true)
+2019-02-16 01:12:20.510  WARN [-,,,] 27400 --- [TaskBatchingWorker-target_localhost-18] c.n.eureka.cluster.ReplicationTask       : The replication of task HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090:Heartbeat@localhost failed with response code 409
+2019-02-16 01:12:20.510  WARN [-,,,] 27400 --- [TaskBatchingWorker-target_localhost-18] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.188.178.28:hello-ribbon-eureka-client:9090 My Timestamp : 1550275597579, Peer's timestamp: 1550275940476
+2019-02-16 01:12:20.511  INFO [-,,,] 27400 --- [TaskBatchingWorker-target_localhost-18] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=true)
+2019-02-16 01:12:31.927  INFO [-,837da1ebc2619a99,837da1ebc2619a99,false] 27400 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=false)
+2019-02-16 01:12:32.438  INFO [-,9c589134b763d21c,9c589134b763d21c,false] 27400 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HELLO-RIBBON-EUREKA-CLIENT/10.188.178.28:hello-ribbon-eureka-client:9090 with status UP (replication=true)
+2019-02-16 01:12:50.264  INFO [-,,,] 27400 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:13:50.265  INFO [-,,,] 27400 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:14:50.265  INFO [-,,,] 27400 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:15:50.265  INFO [-,,,] 27400 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-02-16 01:16:23.811  INFO [-,,,] 27400 --- [Thread-13] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6ac0478a: startup date [Sat Feb 16 01:09:30 CET 2019]; root of context hierarchy
+2019-02-16 01:16:23.813  INFO [-,,,] 27400 --- [Thread-13] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dbd0841: startup date [Sat Feb 16 01:09:32 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6ac0478a
+2019-02-16 01:16:23.814  INFO [-,,,] 27400 --- [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application hello-eureka-server with eureka with status DOWN
+2019-02-16 01:16:23.819  INFO [-,,,] 27400 --- [Thread-13] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2019-02-16 01:16:23.820  INFO [-,,,] 27400 --- [Thread-13] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2019-02-16 01:16:23.823  INFO [-,,,] 27400 --- [Thread-13] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2019-02-16 01:16:23.830  INFO [-,,,] 27400 --- [Thread-13] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-02-16 01:16:23.831  INFO [-,,,] 27400 --- [Thread-13] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-02-16 01:16:23.834  INFO [-,,,] 27400 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-16 01:16:24.471  INFO [-,,,] 27400 --- [Thread-13] s.c.a.AnnotationConfigApplicationContext : Closing SpringClientFactory-localhost: startup date [Sat Feb 16 01:09:52 CET 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dbd0841
+2019-02-16 01:16:24.478  WARN [-,,,] 27400 --- [Thread-13] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.boot.builder.ParentContextCloserApplicationListener$ContextCloserListener.onApplicationEvent(ParentContextCloserApplicationListener.java:100)
+	at org.springframework.boot.builder.ParentContextCloserApplicationListener$ContextCloserListener.onApplicationEvent(ParentContextCloserApplicationListener.java:85)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:312)
+	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:252)
+	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:637)
+
+2019-02-16 01:16:24.482  INFO [-,,,] 27400 --- [Thread-13] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-localhost
+2019-02-16 01:16:24.488  INFO [-,,,] 27400 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-02-16 01:16:24.488  INFO [-,,,] 27400 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-02-16 01:16:24.490  INFO [-,,,] 27400 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-16 01:16:24.543  INFO [-,,,] 27400 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-16 01:51:07.125  INFO [-,,,] 26412 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : No active profile set, falling back to default profiles: default
+2019-02-16 01:51:07.182  INFO [-,,,] 26412 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@9b98f9c: startup date [Sat Feb 16 01:51:07 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@cd641db
+2019-02-16 01:51:07.264  WARN [-,,,] 26412 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.spring.cloud.api.ereuka.server.app.HelloSpringCloudEurekaServerApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.feign.FeignClientsConfiguration
+2019-02-16 01:51:07.374 ERROR [-,,,] 26412 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.spring.cloud.api.ereuka.server.app.HelloSpringCloudEurekaServerApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.feign.FeignClientsConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:646)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:303)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:233)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:271)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:91)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.spring.cloud.api.ereuka.server.app.HelloSpringCloudEurekaServerApplication.main(HelloSpringCloudEurekaServerApplication.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.feign.FeignClientsConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:169)
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:393)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:318)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:636)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: feign/codec/Decoder
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:158)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: feign.codec.Decoder
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 42 common frames omitted
+
+2019-02-16 02:00:14.765  INFO [-,,,] 25744 --- [restartedMain] .HelloSpringCloudEurekaServerApplication : No active profile set, falling back to default profiles: default
+2019-02-16 02:00:14.799  INFO [-,,,] 25744 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b89c575: startup date [Sat Feb 16 02:00:14 CET 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37366870
+2019-02-16 02:00:14.853  WARN [-,,,] 25744 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.spring.cloud.api.ereuka.server.app.HelloSpringCloudEurekaServerApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.feign.FeignClientsConfiguration
+2019-02-16 02:00:14.893 ERROR [-,,,] 25744 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.spring.cloud.api.ereuka.server.app.HelloSpringCloudEurekaServerApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.feign.FeignClientsConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:646)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:303)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:233)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:271)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:91)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.spring.cloud.api.ereuka.server.app.HelloSpringCloudEurekaServerApplication.main(HelloSpringCloudEurekaServerApplication.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.cloud.netflix.feign.FeignClientsConfiguration
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:169)
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:393)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:318)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:636)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: feign/codec/Decoder
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:158)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: feign.codec.Decoder
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 42 common frames omitted
+
